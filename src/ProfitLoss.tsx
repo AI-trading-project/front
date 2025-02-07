@@ -24,7 +24,7 @@ interface ProfitLossProps {
 const ProfitLoss: React.FC<ProfitLossProps> = ({ profitLoss }) => {
     if (!profitLoss) return null;
 
-    const data = profitLoss.data;  // ✅ 데이터 구조 간소화
+    const data = profitLoss.data;
 
     return (
         <div>
