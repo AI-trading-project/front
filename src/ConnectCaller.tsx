@@ -11,7 +11,7 @@ const ConnectCaller: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
 
-  const BASE_URL = process.env.REACT_APP_BASE_URL || 'http://127.1.1.1:5000'
+  const BASE_URL = process.env.REACT_APP_BASE_URL
 
   const callApi = async (endpoint: string, setData: React.Dispatch<React.SetStateAction<any>>) => {
     setLoading(true);
